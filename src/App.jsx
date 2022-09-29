@@ -1,8 +1,11 @@
-import Home from "./components/Home/Home";
+import React, { memo } from 'react';
 import { css } from '@emotion/css';
+// import 'firebase/compat/auth';
+// import 'firebase/compat/firestore';
 
+import Home from './components/Home/Home';
 
-const App = () => {
+function App() {
   return (
     <div className={css`
       display: flex;
@@ -11,10 +14,11 @@ const App = () => {
       align-items: center;
       height: 100%;
       background-color: #f5f5f5;
-    `}>
+    `}
+    >
       <Home />
     </div>
   );
 }
 
-export default App;
+export default memo(App);
