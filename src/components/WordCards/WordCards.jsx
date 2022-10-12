@@ -3,7 +3,7 @@
 /* eslint-disable import/extensions */
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/prop-types */
-import React, { memo, useEffect, useState } from 'react';
+import React, { memo, useState } from 'react';
 import { Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
