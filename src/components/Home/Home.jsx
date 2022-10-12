@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-no-useless-fragment */
 import React, { memo } from 'react';
-import data from '../../utils/data';
-import WordCards from '../WordCards/WordCards';
+import WordsTranslationsList from '../WordsTranslationsList/WordsTranslationsList';
 // import read from '../../service/firebase-crud/read';
 
 function Home() {
@@ -25,14 +24,18 @@ function Home() {
   // }, []);
 
   return (
-    <>
-      {
-      data.length !== 0
-        ? data.map((item) => <WordCards item={item} />)
-        : <>loading.....</>
-      }
-    </>
+    <WordsTranslationsList />
   );
+
+  // return (
+  //   <>
+  //     {
+  //     data.length !== 0
+  //       ? data.map((item) => <WordCards item={item} />)
+  //       : <>loading.....</>
+  //     }
+  //   </>
+  // );
 }
 
 export default memo(Home);
